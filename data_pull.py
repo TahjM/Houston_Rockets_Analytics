@@ -25,7 +25,6 @@ def get_quarter_diff(game_id):
 
     return diffs
 
-get_quarter_diff('0022501194')
 
 # loop through all 82 regular season games
 all_games = []
