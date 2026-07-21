@@ -9,13 +9,13 @@ print(data_df.shape)
 print(data_df.head())
 
 
-# get home record
+# filter home games
 df_Home = data_df[data_df['MATCHUP'].str.contains('vs.')]
 print(df_Home.shape)
 print(df_Home[['MATCHUP', 'WL']].head())
 print(df_Home[['WL']].value_counts())
 
-# get away record
+# filter away games
 df_Away = data_df[data_df['MATCHUP'].str.contains('@')]
 print(df_Away.shape)
 print(df_Away[['MATCHUP', 'WL']].head())
