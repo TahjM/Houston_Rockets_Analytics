@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 
+# chart for quarter differentials
 def plot_quarter_diffs(diff_averages):
     plt.figure()
     bars = plt.bar(['Q1', 'Q2', 'Q3', 'Q4'], diff_averages, color='#C4CED4')
@@ -11,6 +12,7 @@ def plot_quarter_diffs(diff_averages):
 
     plt.savefig('data/quarter_diff_chart.png')
 
+# chart for win percentage
 def plot_win_pct(win_pct):
     plt.figure()
     bars = plt.bar(['Home', 'Away'], win_pct, color='#C4CED4')
@@ -20,6 +22,7 @@ def plot_win_pct(win_pct):
     plt.ylim(0,100)
     plt.savefig('data/win_pct_chart.png')
 
+# chart for close games win pct
 def plot_close_games_win_pct(close_games_win_pct):
     plt.figure()
     bars = plt.bar(['Home', 'Away'], close_games_win_pct, color='#C4CED4')
@@ -29,7 +32,7 @@ def plot_close_games_win_pct(close_games_win_pct):
     plt.ylim(0,100)
     plt.savefig('data/close_games_win_pct_chart.png')
 
-
+# chart for close games win and losses
 def plot_close_games(close_games):
     plt.figure()
     bars = plt.bar(['wins', 'losses'], close_games, color='#C4CED4')
