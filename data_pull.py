@@ -10,6 +10,7 @@ print(df.shape)
 print(df.columns.tolist())
 
 
+# get quarter differential for each game
 def get_quarter_diff(game_id):
     summary = boxscoresummaryv3.BoxScoreSummaryV3(game_id=game_id)
     line_score = summary.get_data_frames()[4]
